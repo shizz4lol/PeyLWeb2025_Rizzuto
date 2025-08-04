@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Inmobiliaria</title>
+        <style type="text/css">
+            .texto{
+                border:1px solid #C5C5C5;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                color: #666666;
+                padding: 5px;
+            }
+            .boton{
+                border: 2px solid #C5C5C5;
+                border-radius: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                color:#666666;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="inmobiliariaLogo.jpg" height="80px" width="100px" align="left">
+        <h1>INMOBILIARIA LANIN<br>
+                <small>since 2013</small>
+        </h1><br>
+        <form align="center" style="display: inline-block; margin-left: 430px;">
+            <h2>Datos del cliente:</h2>
+            <div>
+                <h3>Nombre:</h3>
+                <input type="text" placeholder="Nombre" maxlength="25" size="20" class="texto"><br><br>
+                <h3>Apellido:</h3>
+                <input type="text", placeholder="Apellido" class="texto"
+                maxlength="25" size="20"><br><br>
+                <h3>Direccion:</h3>
+                <textarea maxlength="30" rows="3" class="texto">
+                </textarea><br>
+                <h3>¿Que esta buscando?</h3>
+                <select class="texto">
+                    <option selected>Compra</option>
+                    <option>Alquiler</option>
+                </select><br><br>
+                <h3>Zona de la propiedad:</h3>
+                <input type="checkbox"  checked>Zona Centro
+                <input type="checkbox">Zona Norte
+                <input type="checkbox" checked>Zona Sur<br><br>
+                <h3>Descripcion basica de la propiedad:</h3>
+                <textarea rows="5" class="texto">
+                </textarea><br>
+            </div><br>
+            <div style="justify-content: space-between;">
+                <input type="submit" value="ENVIAR" style="width:100px; height: 70px;" class="boton">
+                <input type="reset" value="RESETEAR" style="width:100px; height: 70px;" class="boton">
+            </div>
+        </form>
+    </body>
+</html>
