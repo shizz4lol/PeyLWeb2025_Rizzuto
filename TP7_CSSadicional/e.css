@@ -1,0 +1,29 @@
+.top, .izq, .der, .centro{
+    border: 2px solid #C5C5C5;
+    background-color: #777;
+    margin: 5px;
+}
+.top{
+    display:block;
+    height: 10vh;
+    margin-bottom: 8px;
+}
+.izq, .der{
+    display:inline;
+    height:80vh;
+    width: 20vh;
+}
+.izq{
+    float:left;
+}
+.der{
+    float:right;
+}
+.centro{
+    float:inline-start;
+    margin:5px;
+    width:78.2%;
+    height:80vh;
+}
+
+
