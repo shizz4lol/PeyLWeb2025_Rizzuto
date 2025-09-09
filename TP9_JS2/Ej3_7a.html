@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meses</title>
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <ul id="lista" onload="con_for()">
+        <li name="mes"></li>
+        <li name="mes"></li>
+        <li name="mes"></li>
+        <li name="mes"></li>
+        <li name="mes"></li>
+        <li name="mes"></li>
+        <li name="mes"></li>
+        <li name="mes"></li>
+        <li name="mes"></li>
+        <li name="mes"></li>
+        <li name="mes"></li>
+        <li name="mes"></li>
+    </ul>
+    <script>
+        function con_for(){
+            var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+            impri=document.getElementsByName("mes");
+            for(var i=0;i<12;i++){
+                impri.innerHTML=document.writeL("<li>"+ meses[i]+"</li><br>");
+            }
+        }
+        /* function con_for(){
+            var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+            impri=document.getElementById("lista");
+            for(var i=0;i<meses.length;i++){
+                impri.innerHTML=document.write("<li>"+ meses[i]+"</li><br>");
+            }
+        }
+        con_for(); */
+    </script>
+</body>
+</html>

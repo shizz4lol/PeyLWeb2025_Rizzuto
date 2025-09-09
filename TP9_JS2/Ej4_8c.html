@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navega</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        if(navigator.appName=='Microsoft Internet Explorer'){
+            window.location.replace('http://www.microsoft.com/ie')
+        }
+        else if(navigator.appName=='Mozilla'){
+            window.location.replace('http://www.mozilla.com/firefox/');
+        }
+        else if(navigator.appName=='Konkeror'){
+            window.location.replace('http://konqueror.org');
+        }
+        else {
+            document.write("Navegador sin reconocer.")
+        }
+    </script>
+</body>
+</html>
