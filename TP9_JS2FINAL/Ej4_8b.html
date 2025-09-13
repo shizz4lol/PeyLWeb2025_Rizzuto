@@ -1,0 +1,59 @@
+<!-- <html>
+<head>
+<script type="text/javascript">
+function alert1(texto){
+	i++;
+	salida.value+=i+" "+texto+"\n";
+	}
+</script>
+</head>
+<body onload="alert1('onload')" onunload="alert('onunload')"
+	onresize="alert1('onresize')" onkeydown="alert1('onkeydown')"
+	onkeypress="alert1('onkeypress')" onkeyup="alert1('onkeyup')">
+<script type="text/javascript">
+var i=0;
+</script>
+<textarea rows="20" cols="20" id="salida"></textarea>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Arbol</title>
+    <script type="text/javascript" src="Ej4_8b.js"></script>
+</head>
+<body>
+    <p>
+        <b onclick="vista(ver)" id="titlneu">Neuquen</b> <b onclick="oculto1()" > -</b>
+        <div id="neu" name="prov">
+            <ul>
+                <li>Neuquen</li>
+                <li>Zapala</li>
+                <li>San Martin</li>
+                <li>Junin</li>
+            </ul>
+        </div>
+        <b onclick="vista()" id="titlrio">Rio Negro</b><b onclick="oculto2()"> -</b> 
+        <div id="rio" name="prov">
+            <ul>
+                <li>Cipoletti</li>
+                <li>Fernandez Oro</li>
+                <li>General Roca</li>
+                <li>Cinco Saltos</li>
+                <li>Allen</li>
+            </ul>
+        </div><br>
+        <b onclick="vista()" id="titlba">Buenos Aires</b><b onclick="oculto3()"> -</b> 
+        <div id="ba" name="prov">
+            <ul>
+                <li>La plata</li>
+                <li>Mar del Plata</li>
+                <li>Necochea</li>
+            </ul>
+        </div>
+    </p>
+</body>
+</html>

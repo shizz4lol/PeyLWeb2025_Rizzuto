@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meses</title>
+    <script type="text/javascript" ></script>
+</head>
+<body>
+    <p>    
+        For:
+        <ul name="lista">
+        </ul>
+        While:
+        <ul name="lista"></ul>
+        Do While:
+        <ul name="lista"></ul>
+        For in:
+        <ul name="lista"></ul>
+    </p>
+    <script>
+        var dias=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+lista=document.getElementsByName("lista");
+for (let i=0; i<12;i++){
+    lista[0].innerHTML+='<li>'+dias[i]+"</li>";
+}
+var i=0;
+while(i<12){
+    lista[1].innerHTML+='<li>'+dias[i]+"</li>";
+    i++;
+}
+var i=0;
+do{
+    lista[2].innerHTML+='<li>'+dias[i]+"</li>";
+    i++;
+}while (i<12);
+for (i in dias){
+    lista[3].innerHTML+='<li>'+dias[i]+"</li>";}
+    </script>
+</body>
+</html>

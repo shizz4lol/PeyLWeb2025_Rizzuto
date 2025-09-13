@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <script type="text/javascript">
+        function factorial(x) {
+            var res;
+            if(x != 0){
+                res = x * factorial(x-1);
+            }else{
+                res = 1;
+            }
+            return res;
+        }
+
+        function pedirDatos() {
+            var num, calculo, salida;
+            num = parseInt(prompt("Ingrese valor", "..."));
+            calculo = factorial(num);
+            salida = document.getElementById('resDiv');
+            salida.innerHTML += "<p> Factorial de "+num+" ( "+num+"!): " +calculo+"</p>";
+        }
+
+    </script>
+</head>
+
+<body onload="pedirDatos()">
+    <div id="resDiv">
+
+    </div>
+
+</body>
+
+</html>
