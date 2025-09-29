@@ -1,0 +1,22 @@
+form{
+    padding:10px;
+    padding-right: 20px;
+    border: 5px dashed pink;
+    
+}
+#form{
+    width:120vh;
+    display:inline-block;
+    margin-left: 25%;
+}
+.b{
+    font-weight: bold;
+    width: 20vh;
+    height: 8vh;
+    background-color: pink;
+    border: 3px dotted white;
+    border-radius: 20px;
+}
+hr{
+    border: 1px solid palevioletred;
+}

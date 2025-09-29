@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT</title>
+    <script type="text/javascript" src="Ej11-12.js"></script>
+    <link type="text/css" rel="stylesheet" href="Ej11-12.css">
+</head>
+<body>
+    <h1>CHAT</h1>
+    <hr>
+    <div id="form">
+        <form>
+            <label for="nom">Nombre</label>
+            <input type="text" id="nom" name="nom" placeholder="Nombre"><br>
+            <textarea id="text" name="text" cols="40" rows="10" onmouseover="borrar('text')"></textarea><br>
+            <input type="button" id="enviar" value="Enviar Mensaje" class="b" onclick="impri()">
+            <input type="button" id="cambio" value="Cambiar Usuario" class="b" onclick="borrar('nom')">
+            <hr>
+            <div id="mostrar" >
+    
+            </div>
+        </form>
+    </div>
+</body>
+</html>
